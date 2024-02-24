@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* border: 2px solid red; */
+    /* background-color: black; */
+}
+
+.big-container {
+    /* border: 2px solid black; */
+    width: 50vw;
+    margin: auto;
+
+}
+
+.container1 {
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding-top: 10px;
+    /* border: 2px dashed red; */
+
+}
+
+.input-cont {
+    /* border: 2px solid greenyellow; */
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+
+}
+
+button[type="button"] {
+    width: 20%;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 1px;
+}
+
+input[type="text"] {
+    background-color: black;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid white;
+    color: white;
+}
+
+
+input[type="text"]:focus {
+    /* outline: none; */
+}
+
+.container2 {
+    /* border: 2px solid blue; */
+    color: white;
+    display: none;
+
+}
+
+.lat-log {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.child-container2,
+.child-container1 {
+    border: 2px solid red;
+    padding: 20px; 
+
+}
+
+
+.child-container2{
+    border: 2px solid white;
+    margin-top: 20px;
+    
+}
+.child-container1 {
+    border: 2px solid black;
+    margin-bottom: 20px;
+
+}
+.inside_cont1,.inside_cont2{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+.err-container,.err-city{
+    color: red;
+    display: none;
+    margin-bottom: 20px;
+}
+.inside-black-cont{
+    /* border: 2px dashed red; */
+    width: 50vw;
+    margin: auto;
+}
+.black-cont{
+    width: 100%;
+    background-color: black;
+    min-height: 600px;
+    padding-top: 10px;
+}
+
+
+
+@media (max-width:800px)
+{
+    .big-container {
+        width: 80vw;
+    
+    }
+    .inside-black-cont{
+        width: 80vw;
+        margin: auto;
+    }
+
+
+button[type="button"] {
+    width: 25%;
+    padding: 6px;
+}
+
+}
+.inside_cont2{
+    color: rgb(205, 201, 201);
+}
+.inside_cont2 strong{
+    color: rgb(241, 236, 236);
+}
+@media (max-width:400px)
+{
+    .big-container {
+        width: 90vw;
+    
+    }
+    .inside-black-cont{
+        width: 90vw;
+        margin: auto;
+    }
+    
+.child-container2,
+.child-container1 {
+    padding: 10px; 
+
+}
+
+
+button[type="button"] {
+    width: 30%;
+    padding: 6px;
+}
+}
